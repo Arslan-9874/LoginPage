@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/signUpstyle.css">
+</head>
+<body>
+    <div class="mainHeading">
+        <h1>Welcome to User Sign Up</h1>
+        <button class="backBtn"><a href="/">Go Back</a></button>
+
+    </div>
+    <div class="content">
+        <div class="contentHeading">
+            <h2>Login</h2>
+        </div>
+        <div>
+            <form method="post" action="">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone No.:</label>
+                    <input type="tel" name="phone" id="phone" maxlength="10" pattern="[0-9]{10}" required>
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <div id="radioPadd">
+                        <input type="radio" name="gender" id="gender" value="male" required>Male
+                        <input type="radio" name="gender" id="gender" value="female" required>Female
+                        <input type="radio" name="gender" id="gender" value="other" required>Other
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <button class="btn">Sign Up</button>
+            </form>
+        </div>
+        <div class="signUp0">
+            <span>Already Registered?</span>
+            <a href="/user">Sign In</a>
+        </div>
+    </div>
+
+</body>
+</html>
